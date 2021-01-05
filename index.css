@@ -24,3 +24,9 @@
   margin-top: 30px;
   width: 30%;
 }
+@media only screen and (max-width: 600px){
+  .question-bg{
+    max-width: 90%;
+    margin-top: 50%;
+  }
+}
