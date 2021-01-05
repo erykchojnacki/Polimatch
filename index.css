@@ -1,0 +1,26 @@
+.question-bg{
+  max-width: 50%;
+  align-items: center;
+  margin-top: 7%;
+  text-align: center;
+}
+.question-form{
+  padding: 2%;
+  border-radius: 5px;
+}
+#question-text{
+  padding-bottom: 20px;
+}
+.btn{
+  width: 70%;
+}
+.upper-button{
+  border-radius: 5px 5px 0px 0px;
+}
+.lower-button{
+  border-radius: 0px 0px 5px 5px;
+}
+.back-button{
+  margin-top: 30px;
+  width: 30%;
+}
