@@ -1,6 +1,5 @@
 var firstQuestion = "Czy państwo powinno istnieć?";
 var answers = [];
-questionCounter = 1;
 
 $("#agree").click(nextQuestion);
 $("#not-agree").click(nextQuestion);
@@ -16,15 +15,11 @@ function nextQuestion() {
   else{
     answers.push(0);
   }
-  console.log(answers);
-  questionCounter++;
   testTree();
 }
 
 function previousQuestion(){
   answers.pop();
-  console.log(answers);
-  questionCounter--;
   testTree();
 }
 
@@ -298,14 +293,11 @@ function showResults(result){
   $("#question-content").attr("style", "display: none");
   $("#result").attr("style", "display: block");
   $("#result-insert").text(result);
-  $(".question-bg").attr("style", "margin-top: 13%");
 }
 
 function takeTestAgain() {
-  questionCounter = 1;
   answers = [];
   updateQuestion(firstQuestion);
   $("#question-content").attr("style", "display: block");
   $("#result").attr("style", "display: none");
-  $(".question-bg").attr("style", "margin-top: 7%");
 }

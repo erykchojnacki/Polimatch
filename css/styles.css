@@ -27,3 +27,16 @@ footer{
   text-decoration: none;
   color: var(--text);
 }
+
+@media (orientation: landscape) and (max-width: 700px) {
+  .contact-box{
+    padding: 1% 1% 0% 1%;
+  }
+  .socialmedia{
+    margin: 0% 1%;
+    font-size: 1rem;
+  }
+  footer{
+    padding: 1% 0% 0.5% 0%;
+  }
+}
