@@ -26,6 +26,7 @@
 #start{
   padding: 1.5% 7%;
   font-size: 1.1rem;
+  font-weight: 700;
 }
 @media (max-width: 1100px){
   .background{
