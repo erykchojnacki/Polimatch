@@ -51,7 +51,9 @@ footer{
   text-decoration: none;
   color: var(--text);
 }
-
+.socialmedia:hover{
+  color: var(--accent);
+}
 @media (orientation: landscape) and (max-height: 700px) {
   .contact-box{
     padding: 1% 1% 0% 1%;
