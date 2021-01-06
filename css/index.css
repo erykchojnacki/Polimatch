@@ -1,12 +1,16 @@
 .background{
-  max-width: 50%;
+  max-width: 70%;
   align-items: center;
-  margin-top: 9%;
   text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
 }
 .face{
   padding: 5%;
   border-radius: 5px;
+  background-color: var(--primary);
 }
 #headline{
   font-size: 2.5rem;
@@ -19,8 +23,27 @@
   padding: 0% 0% 1% 0%;
   font-size: 1.1rem;
 }
-@media (max-width: 1200px){
+#start{
+  padding: 1.5% 7%;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+@media (max-width: 1100px){
   .background{
-    max-width: 80%;
+    max-width: 90%;
+  }
+}
+@media (max-width: 900px) {
+  #headline{
+    font-size: 1.5rem;
+  }
+  #undertitle{
+    font-size: 1rem;
+  }
+  #time{
+    font-size: 0.9rem;
+  }
+  #start{
+    font-size: 0.9rem;
   }
 }
