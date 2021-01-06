@@ -80,15 +80,7 @@ function testTree(){
                   }
                 }
                 else if(answers[3] === 1){
-                  updateQuestion("Czy uważasz za niezwykle ważną obronę ładu naturalnego?");
-                  if(answers.length > 4){
-                    if(answers[4] === 0){
-                      showResults("Libertarianizm Hoppego");
-                    }
-                    else if(answers[4] === 1){
-                      showResults("Paleolibertarianizm");
-                    }
-                  }
+                  showResults("Paleolibertarianizm");
                 }
               }
             }
