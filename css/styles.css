@@ -16,10 +16,41 @@ nav{
 button{
   background-color: var(--accent);
 }
+details{
+  margin: 3%;
+  transition: height 1s ease;
+}
+details p {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  max-height: 200px;
+  padding: 1%;
+  white-space: pre-wrap;
+}
+details[open] p {
+  animation: animateDown 0.5s linear forwards;
+}
+
+@keyframes animateDown {
+  0% {
+    opacity: 0;
+    transform: translatey(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
+::-webkit-scrollbar {
+  width: 1%;
+}
+summary{
+  font-size: 1.4rem;
+}
 footer{
   text-align: center;
   background-color: var(--primary);
-  padding: 2% 0% 0.5% 0%;
+  padding: 1% 0% 0.5% 0%;
 }
 .butn {
   border: none;
@@ -39,7 +70,7 @@ footer{
 .contact-box{
   text-align: center;
   margin-top: 7%;
-  padding: 2% 2% 0% 2%;
+  padding: 1% 1% 0% 1%;
   background-color: var(--primary);
   position: absolute;
   width: 100%;
@@ -56,13 +87,30 @@ footer{
 }
 @media (orientation: landscape) and (max-height: 700px) {
   .contact-box{
-    padding: 1% 1% 0% 1%;
+    padding: 0.5% 0.5% 0% 0.5%;
   }
   .socialmedia{
-    margin: 0% 1%;
     font-size: 1rem;
   }
   footer{
-    padding: 1% 0% 0.5% 0%;
+    padding: 0.5% 0% 0.5% 0%;
+  }
+}
+@media(max-width: 1100px){
+  nav{
+    min-height: 100px;
+  }
+  nav a {
+    font-size: 2rem !important;
+  }
+  details{
+    margin: 6%;
+  }
+  details p{
+    padding: 3%;
+    max-height: 130px;
+  }
+  .socialmedia{
+    margin: 0% 4%;
   }
 }

@@ -23,7 +23,9 @@
       gtag('config', 'G-N8TK9ECNQ6');
     </script>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v9.0" nonce="Jievu1EQ"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Polimatch</a>
         <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,8 +51,16 @@
             <div id="result" style="display: none">
               <div class="result-content">
                 <h2>Twoja ideologia to:</h2>
-                <h1 id="result-insert">Ideologia</h1>
-                <button id="retake" type="button" class="butn">JESZCZE RAZ</button>
+                <h1 class="result-insert">Ideologia</h1>
+                <details>
+                  <summary class="result-insert"></summary>
+                  <p id="result-description">description</p>
+                </details>
+                <details>
+                  <summary>Myśliciele</summary>
+                  <p id="result-thinkers">thinkers</p>
+                </details>
+                <button id="retake" type="button" class="butn">JESZCZE RAZ</button><br>
               </div>
             </div>
           </div>
@@ -60,8 +70,9 @@
     <div class="container-fluid contact-box">
       <a class="socialmedia" href="https://www.facebook.com/erykchojnackiml" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a>
       <a class="socialmedia" href="https://twitter.com/eryk_chojnacki" target="_blank"><i class="fab fa-twitter-square"></i> Twitter</a>
-      <footer>ver. a.2.1<br>&copy; Eryk Chojnacki 2021</footer>
+      <footer>ver. a.3<br>&copy; Eryk Chojnacki 2021</footer>
     </div>
     <script src="js/test.js" type="text/javascript"></script>
+    <script src="js/descriptions.js" type="text/javascript"></script>
   </body>
 </html>

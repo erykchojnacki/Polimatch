@@ -35,15 +35,16 @@
 }
 @media (max-width: 900px) {
   #headline{
-    font-size: 1.5rem;
+    font-size: 3.5rem;
   }
   #undertitle{
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
   #time{
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
   #start{
-    font-size: 0.9rem;
+    padding: 3% 10%;
+    margin-bottom: 2%;
   }
 }

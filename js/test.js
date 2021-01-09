@@ -72,7 +72,7 @@ function testTree(){
                   updateQuestion("Czy anarchokapitalizm powinien być zaprowadzony rewolucyjnie?");
                   if(answers.length > 4){
                     if(answers[4] === 0){
-                      showResults("Libertarianizm głównego nurtu");
+                      showResults("Anarchokapitalizm");
                     }
                     else if(answers[4] === 1){
                       showResults("Agoryzm");
@@ -284,7 +284,8 @@ function testTree(){
 function showResults(result){
   $("#question-content").attr("style", "display: none");
   $("#result").attr("style", "display: block");
-  $("#result-insert").text(result);
+  $(".result-insert").text(result);
+  matchDescription(result);
 }
 
 function takeTestAgain() {
